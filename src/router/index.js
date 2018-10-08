@@ -12,6 +12,11 @@ export default new Router({
       redirect : '/indexView/index',
     },
     {
+      path : '/ccc',
+      name : 'ccc',
+      component : resolve => require(['@/view/ccc'] , resolve)
+    },
+    {
       path : '/indexView',
       name : 'index',
       component : resolve => require(['@/view/indexView'] , resolve),
